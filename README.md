@@ -1,9 +1,7 @@
 # Origo_Repository
-IF AN IDEA EXISTS, IT IS TIMELESS...
+Ori(go)
 
 https://github.com/user-attachments/assets/8e9bc997-e79a-4ed6-854e-a1be14f606e2
-
-With the help of Origo, origami, imbued with mathematical design and symmetry will enter the digital realm.
 
 
 ![Screenshot (526)](https://github.com/user-attachments/assets/e25e088c-9512-4d24-9e1a-9a56b376a639)
