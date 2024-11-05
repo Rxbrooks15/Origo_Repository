@@ -1,8 +1,11 @@
 # Origo_Repository
-Ori(go) (in the making) 
+Ori(go)- Origami on the GO
+
+Video documenting animated transformative origami model. Crumpled pieces of paper are unopened origami models. Button functionality is still being determined*
 
 https://github.com/user-attachments/assets/8e9bc997-e79a-4ed6-854e-a1be14f606e2
 
+Singular animated crane model derived from https://origamisimulator.org/ 
 ![crane_900](https://github.com/user-attachments/assets/f6d6a431-7a48-4f1c-a05b-e0f98b27b6c2)
 
 
