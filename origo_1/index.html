@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Website</title>
+  <link rel="stylesheet" href="main.css" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow-x: hidden;
+    }
+
+    .top-nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 5px 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 999;
+    }
+
+    .nav-logo-left, .nav-logo-right {
+      height: 40px;
+    }
+
+    .nav-logo-right {
+      cursor: pointer;
+    }
+
+    nav.top-nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav.top-nav li a {
+      color: rgb(106, 202, 219);
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 20px;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    nav.top-nav li a:hover {
+      background-color: #555;
+      border-radius: 5px;
+    }
+
+    .signin-popup {
+      display: none;
+      position: fixed;
+      top: 70px;
+      right: 20px;
+      background-color: #fff;
+      padding: 20px;
+      border: 2px solid #333;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      z-index: 9999;
+    }
+
+    .signin-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .signin-form h2 {
+      margin-top: 0;
+      color: #007bff;
+    }
+
+    .signin-form input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .signin-form button {
+      padding: 10px;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .signin-form button:hover {
+      background-color: #0056b3;
+    }
+
+    .background-container {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .background-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .character-section-wrapper {
+      padding-top: 200px;
+    }
+
+    .character-section {
+  position: relative;
+  width:  500px; /* adjust depending on your tallest model */
+  z-index: 10;
+}
+
+.character {
+  position: absolute;
+  bottom: -30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+    .character img:last-child {
+      width: 100px;
+      margin-top: 10px;
+    }
+
+    .left-center-image {
+      position: absolute;
+      left: 35px;
+      top: 210px;
+      transform: translateY(-50%);
+      width: 160px;
+    }
+
+    .books-image {
+      position: absolute;
+      bottom: -20px;
+      left: -19px;
+      width: 200px;
+    }
+
+    .crumpled-papers {
+      position: absolute;
+      bottom: 0;
+      right: 100px;
+      display: flex;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .crumpled-papers img {
+      width: 60px;
+    }
+
+    .blue-image {
+      position: absolute;
+      bottom: -5px;
+      left: 15%;
+      transform: translateX(-50%);
+      width: 80px;
+    }
+
+    .org-container {
+      margin-top: -550px;
+      padding-right: 40px;
+      z-index: 10;
+      position: relative;
+      width: 100%;
+      height: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .org-container img {
+      width: 150px;
+      height: 120px;
+    }
+
+    #floating-tooltip {
+      position: fixed;
+      display: none;
+      background-color: rgba(0, 0, 0, 0.85);
+      color: #41afbc;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      max-width: 260px;
+      line-height: 1.4;
+      z-index: 9999;
+      pointer-events: none;
+    }
+
+    #floating-tooltip a {
+      color: #00bfff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="top-nav-wrapper">
+    <img src="origo.png" alt="Origo Logo" class="nav-logo-left" style="margin-left: 40px; width: 40px; height: 40px; border-radius: 50%;">
+    <nav class="top-nav">
+      <ul>
+        <li><a href="HOME.html">Main Frame</a></li>
+        <li><a href="#">Collection </a></li>
+        <li><a href="Instruction_Page.html">Instructions</a></li>
+        <li><a href="Nova.html">NoVa</a></li>
+        <li><a href="#">Store</a></li>
+        <li><a href="crumble.html">Crumble</a></li>
+        <li><a href="#">Lorag</a></li>
+        <li><a href="https://origo.fandom.com/wiki/Ori(go)_Wiki" target="_blank">About</a></li>
+      </ul>
+    </nav>
+    <img src="Log.png" alt="User Login" class="nav-logo-right" style="margin-right: 100px;" onclick="toggleLoginBox()">
+  </div>
+
+  <!-- Background -->
+  <div class="background-container">
+    <img src="origo_background.png" alt="Background Image" />
+  </div>
+
+
+  <!-- Login Popup -->
+  <div id="signinPopup" class="signin-popup">
+    <form class="signin-form" onsubmit="handleSignIn(event)">
+      <h2>Sign In</h2>
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <div class="character" style="left: 20%;">
+    <img src="vanguard.gif" alt="Vanguard" style="width: 300px;" />
+    <img src="stand.png" alt="Stand for Vanguard" />
+  </div>
+
+  
+  <div class="character" style="left: 38%;">
+    <img src="terminal.gif" alt="Terminal" style="width: 300px;" />
+    <img src="stand.png" alt="Stand for Terminal" />
+  </div>
+   
+
+  <div class="character" style="left: 60%;">
+    <img src="specter.gif" alt="Void1" style="width: 300px;" />
+    <img src="stand.png" alt="Stand for Void1" />
+  </div>
+  <!-- Tooltip -->
+  <div id="floating-tooltip"></div>
+
+  <!-- Floating Images -->
+  <img src="hxh.png" alt="HXH PNG" class="left-center-image" />
+  <img src="books.png" alt="Books PNG" class="books-image" />
+  <div class="org-container">
+    <img src="org.png" alt="Org Logo" />
+  </div>
+  <div class="crumpled-papers">
+    <img src="white.png" alt="White PNG" />
+    <img src="yellow.png" alt="Yellow PNG" />
+  </div>
+  <img src="blue.png" alt="Blue PNG" class="blue-image" />
+
+  <!-- Audio Controls -->
+  <audio id="audioPlayer"></audio>
+  <div style="position: fixed; bottom: 120px; right: 20px; z-index: 1000; display: flex; gap: 10px;">
+    <button id="startAudio">🔊 Start Audio</button>
+    <button id="stopAudio">⏹️ Stop Audio</button>
+  </div>
+  <div style="position: fixed; bottom: 70px; right: 50px; z-index: 1000; display: flex; align-items: center;">
+    <img src="song.png" alt="Volume" style="width: 24px; height: 24px; margin-right: 8px;" />
+    <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.5" />
+  </div>
+
+  <!-- Script -->
+  <script>
+    function toggleLoginBox() {
+      const popup = document.getElementById("signinPopup");
+      popup.style.display = popup.style.display === "block" ? "none" : "block";
+    }
+
+    function handleSignIn(event) {
+      event.preventDefault();
+      alert("Signed in successfully!");
+    }
+
+    const tooltip = document.getElementById("floating-tooltip");
+    const triggers = document.querySelectorAll(".tooltip-trigger");
+
+    triggers.forEach(trigger => {
+      trigger.addEventListener("mousemove", e => {
+        tooltip.innerHTML = trigger.getAttribute("data-tooltip");
+        tooltip.style.display = "block";
+        tooltip.style.left = e.pageX + 15 + "px";
+        tooltip.style.top = e.pageY + 15 + "px";
+      });
+
+      trigger.addEventListener("mouseleave", () => {
+        tooltip.style.display = "none";
+      });
+    });
+
+    const audioFiles = ["summer.mp3", "city.mp3", "pool.mp3"];
+    let currentTrack = 0;
+    const player = document.getElementById("audioPlayer");
+    const volumeControl = document.getElementById("volumeControl");
+
+    document.getElementById("startAudio").addEventListener("click", () => {
+      player.src = audioFiles[currentTrack];
+      player.volume = volumeControl.value;
+      player.play();
+    });
+
+    document.getElementById("stopAudio").addEventListener("click", () => {
+      player.pause();
+      player.currentTime = 0;
+    });
+
+    player.addEventListener("ended", () => {
+      currentTrack = (currentTrack + 1) % audioFiles.length;
+      player.src = audioFiles[currentTrack];
+      player.play();
+    });
+
+    volumeControl.addEventListener("input", () => {
+      player.volume = volumeControl.value;
+    });
+  </script>
+</body>
+</html>
