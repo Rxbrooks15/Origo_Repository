@@ -6,7 +6,7 @@ https://1drv.ms/p/c/bd3bac6a61e66f3b/ERFFXvLRUthDgbdmGgO0PyEB5PKjeYrVjEXc05KDLrX
 https://docs.google.com/presentation/d/1iLFGd0KxpOmfY3VgB6IDohvrFgItQsqOOK59Gxs-_-E/edit?slide=id.g35696e17cba_0_0#slide=id.g35696e17cba_0_0
 
 Presentation slide decks ^^^
-
+ORIGO SOFT LAUNCH VIDEO
 https://www.youtube.com/shorts/eBZ930wKoZ4?feature=share
 
 
