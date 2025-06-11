@@ -16,8 +16,8 @@ Singular animated crane model derived from https://origamisimulator.org/
 
 Presentation front page image 
 
-![Screenshot (526)](https://github.com/user-attachments/assets/e25e088c-9512-4d24-9e1a-9a56b376a639)
 
+![ori(go) logo](https://github.com/user-attachments/assets/14d3625d-67fd-4bc3-9d91-13fe06f26d30)
 
 Visualization documenting a linear regression model in relation to the fold time and perceived difficulty of an origami model.
 
@@ -30,6 +30,7 @@ Image of Crane Model Prototype
 
 ![3_models](https://github.com/user-attachments/assets/b6a4ec22-3641-4ffa-88e4-8a2122365d75)
 
+![Screenshot (114)](https://github.com/user-attachments/assets/70b6a50c-35ce-4ae9-aabf-93a80673a7f3)
 
 
 
