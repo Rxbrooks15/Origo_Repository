@@ -2,7 +2,10 @@
 Ori(go)- Origami on the GO 
 (Art and Geometry Meets Technology)
 https://1drv.ms/p/c/bd3bac6a61e66f3b/ERFFXvLRUthDgbdmGgO0PyEB5PKjeYrVjEXc05KDLrXKqw?e=8pEeHg 
-Presentation slide deck ^^^
+
+https://docs.google.com/presentation/d/1iLFGd0KxpOmfY3VgB6IDohvrFgItQsqOOK59Gxs-_-E/edit?slide=id.g35696e17cba_0_0#slide=id.g35696e17cba_0_0
+
+Presentation slide decks ^^^
 
 Video documenting animated transformative origami model. Crumpled pieces of paper are unopened origami models. Button functionality is still being determined*
 
