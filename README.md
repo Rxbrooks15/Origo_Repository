@@ -23,6 +23,8 @@ Visualization documenting a linear regression model in relation to the fold time
 
 https://github.com/user-attachments/assets/b5ef8df7-d8f2-4d27-b1fa-51bead548d75 
 
+![Screenshot (114)](https://github.com/user-attachments/assets/70b6a50c-35ce-4ae9-aabf-93a80673a7f3)
+
 
 Image of Crane Model Prototype
 
@@ -30,7 +32,6 @@ Image of Crane Model Prototype
 
 ![3_models](https://github.com/user-attachments/assets/b6a4ec22-3641-4ffa-88e4-8a2122365d75)
 
-![Screenshot (114)](https://github.com/user-attachments/assets/70b6a50c-35ce-4ae9-aabf-93a80673a7f3)
 
 
 
