@@ -7,6 +7,9 @@ https://docs.google.com/presentation/d/1iLFGd0KxpOmfY3VgB6IDohvrFgItQsqOOK59Gxs-
 
 Presentation slide decks ^^^
 
+https://www.youtube.com/shorts/eBZ930wKoZ4?feature=share
+
+
 Video documenting animated transformative origami model. Crumpled pieces of paper are unopened origami models. Button functionality is still being determined*
 
 https://github.com/user-attachments/assets/8e9bc997-e79a-4ed6-854e-a1be14f606e2
