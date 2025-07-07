@@ -1,6 +1,8 @@
 # Origo_Repository
 Ori(go)- Origami on the GO 
 (Art and Geometry Meets Technology)
+[QSS20_Final (1).pdf](https://github.com/user-attachments/files/21110893/QSS20_Final.1.pdf)
+
 https://1drv.ms/p/c/bd3bac6a61e66f3b/ERFFXvLRUthDgbdmGgO0PyEB5PKjeYrVjEXc05KDLrXKqw?e=8pEeHg 
 
 https://docs.google.com/presentation/d/1iLFGd0KxpOmfY3VgB6IDohvrFgItQsqOOK59Gxs-_-E/edit?slide=id.g35696e17cba_0_0#slide=id.g35696e17cba_0_0
