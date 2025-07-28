@@ -37,16 +37,29 @@ Visualization documenting a linear regression model in relation to the fold time
 https://github.com/user-attachments/assets/b5ef8df7-d8f2-4d27-b1fa-51bead548d75 
 
 ![Screenshot (114)](https://github.com/user-attachments/assets/70b6a50c-35ce-4ae9-aabf-93a80673a7f3)
+Logo
 
+<img width="503" height="413" alt="Logo 3" src="https://github.com/user-attachments/assets/41d75022-c670-4bfe-88a8-95c3a561fbf1" />
 
-Image of Crane Model Prototype
+Image of Digital Crane Model Prototypes (NoVa)
 
-![Screenshot (527)](https://github.com/user-attachments/assets/aba22ba6-daa8-4a3b-b498-0c8a5a5a1d13)
 
 ![3_models](https://github.com/user-attachments/assets/b6a4ec22-3641-4ffa-88e4-8a2122365d75)
 
+The Creased Cosmos comes to life 
+----------------------------------
 
 
+<img width="637" height="640" alt="final nine gates prezi" src="https://github.com/user-attachments/assets/11b16478-e36a-487d-9055-c2d711361dd4" />
+<img width="270" height="270" alt="The Return of Terminal - Shadow Step" src="https://github.com/user-attachments/assets/a9387d72-1bee-468a-b700-64b58c6475a0" />
+
+<img width="1065" height="823" alt="Screenshot (344)" src="https://github.com/user-attachments/assets/adc73168-84d5-4f7a-bc90-c69d34e5583f" />
 
 
+![IMG_3779](https://github.com/user-attachments/assets/40425798-3f05-4eda-b0e9-3f7232c56757)
+
+Compettitors 
+-------------
+
+<img width="960" height="540" alt="Ori(go)" src="https://github.com/user-attachments/assets/e9bcf2bf-33f1-4535-829c-430fa84b68a2" />
 
