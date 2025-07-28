@@ -2,6 +2,7 @@
 Ori(go)- Origami on the GO 
 (Art and Geometry Meets Technology)
 Current Streamlit page: https://origamiregression-fcz78atwckd2wtqhq7bk5d.streamlit.app/
+Ori(go) reseatch write-up
 [QSS20_Final (1).pdf](https://github.com/user-attachments/files/21110893/QSS20_Final.1.pdf)
 
 https://1drv.ms/p/c/bd3bac6a61e66f3b/ERFFXvLRUthDgbdmGgO0PyEB5PKjeYrVjEXc05KDLrXKqw?e=8pEeHg 
