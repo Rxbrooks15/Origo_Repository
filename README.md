@@ -45,7 +45,7 @@ Logo
 
 <img width="503" height="413" alt="Logo 3" src="https://github.com/user-attachments/assets/41d75022-c670-4bfe-88a8-95c3a561fbf1" />
 
-Image of Digital Crane Model Prototypes (NoVa)
+Image of Digital Crane Model Prototypes (NoVas)
 
 
 ![3_models](https://github.com/user-attachments/assets/b6a4ec22-3641-4ffa-88e4-8a2122365d75)
