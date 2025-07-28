@@ -16,6 +16,14 @@ Video documenting animated transformative origami model. Crumpled pieces of pape
 
 https://github.com/user-attachments/assets/8e9bc997-e79a-4ed6-854e-a1be14f606e2
 
+First Polynomial regression with topic modeling 
+<img width="1920" height="970" alt="Screenshot (375)" src="https://github.com/user-attachments/assets/43bfb088-9c61-4d15-b9a3-c254bd15b693" />
+
+Updated Logarithm regression model: R-squared = 0.545 (7/28/25)
+
+<img width="1920" height="908" alt="Screenshot (379)" src="https://github.com/user-attachments/assets/3b57db52-feff-47ea-b068-5f1d9e0d3ea0" />
+
+
 Singular animated crane model derived from https://origamisimulator.org/ 
 ![crane_900](https://github.com/user-attachments/assets/f6d6a431-7a48-4f1c-a05b-e0f98b27b6c2)
 
