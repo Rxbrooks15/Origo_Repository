@@ -58,7 +58,7 @@ The Creased Cosmos comes to life
 
 ![IMG_3779](https://github.com/user-attachments/assets/40425798-3f05-4eda-b0e9-3f7232c56757)
 
-Compettitors 
+Competitors 
 -------------
 
 <img width="960" height="540" alt="Ori(go)" src="https://github.com/user-attachments/assets/e9bcf2bf-33f1-4535-829c-430fa84b68a2" />
