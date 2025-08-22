@@ -488,19 +488,14 @@ const unlockButton = unlockPopup.querySelector("#unlock-confirm");
 
 unlockInput.addEventListener("input", () => {
   const value = parseInt(unlockInput.value, 10);
-  const score = parseInt(localStorage.getItem("score"), 10) || 0;  // Retrieve score from localStorage (default to 0 if not available)
-
-  // Enable the unlock button only if the value is within the allowed range
-  unlockButton.disabled = isNaN(value) || value < currentUnlockTarget.minAmount || value > score;
+  // Enable unlock button if the input is a valid number
+  unlockButton.disabled = isNaN(value);
 });
-
 
 unlockButton.addEventListener("click", () => {
   if (!currentUnlockTarget) return;
 
   const { id, icon } = currentUnlockTarget;
-  const unlockValue = parseInt(unlockInput.value, 10);  // Get the value entered by the user
-  const score = parseInt(localStorage.getItem("score"), 10) || 0;
 
   // Subtract the unlocked amount from the score in localStorage
   localStorage.setItem("score", 1e9);
