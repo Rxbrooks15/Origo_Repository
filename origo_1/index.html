@@ -288,7 +288,22 @@
   font-size: 14px;
   box-sizing: border-box;
 }
-
+.welcome-box {
+  position: absolute;
+  left: 22%;                /* 25% from the left of viewport */
+  top: 65%;                 /* 75% from the top of viewport */
+  transform: translate(-50%, -50%); /* center the box at that point */
+  width: 150px;             /* adjust width as needed */
+  height: 120px;             /* adjust height as needed */
+  padding: 10px;
+  border: 2px solid black;  /* black border */
+  background-color: white;  /* white background */
+  color: black;             /* text color */
+  font-size: 12px;
+  line-height: 1.3;
+  border-radius: 5px;       /* optional rounded corners */
+  text-align: center;       /* center text horizontally */
+}
 
 
     
@@ -407,7 +422,11 @@
 <img id="imagePreview" style="max-width: 100%; margin-top: 10px; display: none;" />
 
 
-
+<div class="welcome-box">
+  Welcome to the world of <strong>The Creased Cosmos 👋</strong><br>
+  Unlock new digital origami models (Novas), play some music, and explore the page via the navigation bar.<br>
+  <em>Ori(go) - Origami on the GO!</em>
+</div>
 
   <!-- Floating Images -->
   <img src="hxh.png" alt="HXH PNG" class="left-center-image" />
@@ -488,17 +507,22 @@ const unlockButton = unlockPopup.querySelector("#unlock-confirm");
 
 unlockInput.addEventListener("input", () => {
   const value = parseInt(unlockInput.value, 10);
-  // Enable unlock button if the input is a valid number
-  unlockButton.disabled = isNaN(value);
+  const score = parseInt(localStorage.getItem("score"), 10) || 0;  // Retrieve score from localStorage (default to 0 if not available)
+
+  // Enable the unlock button only if the value is within the allowed range
+  unlockButton.disabled = isNaN(value) || value < currentUnlockTarget.minAmount || value > score;
 });
+
 
 unlockButton.addEventListener("click", () => {
   if (!currentUnlockTarget) return;
 
   const { id, icon } = currentUnlockTarget;
+  const unlockValue = parseInt(unlockInput.value, 10);  // Get the value entered by the user
+  const score = parseInt(localStorage.getItem("score"), 10) || 0;
 
   // Subtract the unlocked amount from the score in localStorage
-  localStorage.setItem("score", 1e9);
+  localStorage.setItem("score", score - unlockValue);
 
   unlockPopup.style.display = "none";
   unlockInput.value = "";
