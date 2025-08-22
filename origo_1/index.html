@@ -503,7 +503,7 @@ unlockButton.addEventListener("click", () => {
   const score = parseInt(localStorage.getItem("score"), 10) || 0;
 
   // Subtract the unlocked amount from the score in localStorage
-  localStorage.setItem("score", score);
+  localStorage.setItem("score", score - unlockValue);
 
   unlockPopup.style.display = "none";
   unlockInput.value = "";
