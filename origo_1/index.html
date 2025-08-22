@@ -531,7 +531,7 @@ document.getElementById("icon-vanguard").addEventListener("click", () => {
 document.getElementById("icon-specter").addEventListener("click", () => {
   const icon = document.getElementById("icon-specter");
   if (icon.src.includes("lock_spectre_icon.png")) {
-    showUnlockPopup("specter", "spectre_icon.png", 500);  // Minimum 500 for Specter
+    showUnlockPopup("specter", "spectre_icon.png", 0);  // Minimum 500 for Specter
   } else {
     document.getElementById("specter").style.display = "block";
     document.getElementById("stand-specter").style.display = "block";
@@ -541,7 +541,7 @@ document.getElementById("icon-specter").addEventListener("click", () => {
 document.getElementById("icon-terminal").addEventListener("click", () => {
   const icon = document.getElementById("icon-terminal");
   if (icon.src.includes("lock_terminal_icon.png")) {
-    showUnlockPopup("terminal", "terminal_icon.png", 1000);  // Minimum 1000 for Terminal
+    showUnlockPopup("terminal", "terminal_icon.png", 0);  // Minimum 1000 for Terminal
   } else {
     document.getElementById("terminal").style.display = "block";
     document.getElementById("stand-terminal").style.display = "block";
