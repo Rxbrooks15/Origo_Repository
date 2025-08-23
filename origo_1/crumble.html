@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crumble - Share Your Thoughts</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('crumble.jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Top Navigation */
+    .top-nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(26, 26, 26, 0.9);
+      padding: 10px 20px;
+      border-bottom: 2px solid #444;
+    }
+
+    .top-nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-nav ul li a {
+      text-decoration: none;
+      color: #66ccff;
+      font-weight: bold;
+    }
+
+    .nav-logo-left, .nav-logo-right {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      font-size: 2.5em;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    input[type="file"] {
+      padding: 6px;
+    }
+
+    button {
+      background: #5a3ea1;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    button:hover {
+      background: #4b2f8a;
+    }
+
+    .post {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .post h2 {
+      margin: 0 0 10px;
+      font-size: 1.4em;
+      color: #333;
+    }
+
+    .post p {
+      margin: 0 0 10px;
+      font-size: 1em;
+      color: #555;
+    }
+
+    .post img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    .post button {
+      background-color: #27ae60;
+      margin-top: 10px;
+    }
+
+    .upvotes {
+      display: inline-block;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="top-nav-wrapper">
+    <img src="origo.png" alt="Origo Logo" class="nav-logo-left" style="margin-left: 40px; width: 40px; height: 40px; border-radius: 50%;">
+    <nav class="top-nav">
+      <ul>
+        <li><a href="HOME.html">Main Frame</a></li>
+        <li><a href="#">Collection </a></li>
+        <li><a href="Instruction_Page.html">Instructions</a></li>
+        <li><a href="mini_game/index.html">Gami-Game</a></li>
+        <li><a href="Nova.html">NoVa</a></li>
+        <li><a href="#">Store</a></li>
+        <li><a href="crumble.html">Crumble</a></li>
+        <li><a href="#">Lorax</a></li>
+        <li><a href="https://origo.fandom.com/wiki/Ori(go)_Wiki" target="_blank">About</a></li>
+      </ul>
+    </nav>
+    <img src="Log.png" alt="User Login" class="nav-logo-right" style="margin-right: 100px;" onclick="toggleLoginBox()">
+  </div>
+  <!-- Main Crumble Container -->
+  <div class="container">
+    <h1>Crumble</h1>
+
+    <div class="card">
+      <input type="text" id="title" placeholder="What's on your mind?" />
+      <textarea id="content" rows="4" placeholder="Say more..."></textarea>
+      <input type="file" id="imageInput" accept="image/*" />
+      <button onclick="submitPost()">Post to Crumble</button>
+    </div>
+
+    <div id="posts"></div>
+  </div>
+
+  <script>
+    function submitPost() {
+      const title = document.getElementById('title').value;
+      const content = document.getElementById('content').value;
+      const imageInput = document.getElementById('imageInput');
+      const postsContainer = document.getElementById('posts');
+
+      if (!title && !content && !imageInput.files.length) {
+        alert('Please add content or an image.');
+        return;
+      }
+
+      const post = document.createElement('div');
+      post.className = 'post';
+
+      let imageHTML = '';
+      if (imageInput.files.length > 0) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          imageHTML = `<img src="${e.target.result}" alt="Post image" />`;
+          post.innerHTML = `
+            <h2>${title}</h2>
+            <p>${content}</p>
+            ${imageHTML}
+            <p class="upvotes"><span>0</span> upvotes</p>
+            <button onclick="upvote(this)">Upvote</button>
+          `;
+          postsContainer.prepend(post);
+        };
+        reader.readAsDataURL(imageInput.files[0]);
+      } else {
+        post.innerHTML = `
+          <h2>${title}</h2>
+          <p>${content}</p>
+          <p class="upvotes"><span>0</span> upvotes</p>
+          <button onclick="upvote(this)">Upvote</button>
+        `;
+        postsContainer.prepend(post);
+      }
+
+      document.getElementById('title').value = '';
+      document.getElementById('content').value = '';
+      document.getElementById('imageInput').value = '';
+    }
+
+    function upvote(button) {
+      const upvoteSpan = button.previousElementSibling.querySelector('span');
+      upvoteSpan.textContent = parseInt(upvoteSpan.textContent) + 1;
+    }
+
+    function toggleLoginBox() {
+      alert("Login box toggle goes here.");
+    }
+  </script>
+</body>
+</html>
