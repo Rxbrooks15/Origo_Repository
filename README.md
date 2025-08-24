@@ -55,9 +55,6 @@ The Creased Cosmos comes to life
 
 
 <img width="637" height="640" alt="final nine gates prezi" src="https://github.com/user-attachments/assets/11b16478-e36a-487d-9055-c2d711361dd4" />
-<img width="270" height="270" alt="The Return of Terminal - Shadow Step" src="https://github.com/user-attachments/assets/a9387d72-1bee-468a-b700-64b58c6475a0" />
-
-<img width="1065" height="823" alt="Screenshot (344)" src="https://github.com/user-attachments/assets/adc73168-84d5-4f7a-bc90-c69d34e5583f" />
 
 
 ![IMG_3779](https://github.com/user-attachments/assets/40425798-3f05-4eda-b0e9-3f7232c56757)
