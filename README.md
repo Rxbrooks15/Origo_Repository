@@ -38,6 +38,8 @@ Presentation front page image
 Visualization documenting a linear regression model in relation to the fold time and perceived difficulty of an origami model.
 
 https://github.com/user-attachments/assets/b5ef8df7-d8f2-4d27-b1fa-51bead548d75 
+<img width="927" height="547" alt="Time vs difficulty" src="https://github.com/user-attachments/assets/bd2ea0cf-458b-478e-9a6b-f40e1083dcdb" />
+
 
 Origami Database 
 
