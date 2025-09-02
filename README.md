@@ -25,6 +25,8 @@ First Polynomial regression with topic modeling
 Updated Logarithm regression model: R-squared = 0.545 (7/28/25)
 
 <img width="1920" height="908" alt="Screenshot (379)" src="https://github.com/user-attachments/assets/3b57db52-feff-47ea-b068-5f1d9e0d3ea0" />
+<img width="927" height="547" alt="Time vs difficulty" src="https://github.com/user-attachments/assets/bd2ea0cf-458b-478e-9a6b-f40e1083dcdb" />
+
 
 
 Singular animated crane model derived from https://origamisimulator.org/ 
@@ -38,7 +40,6 @@ Presentation front page image
 Visualization documenting a linear regression model in relation to the fold time and perceived difficulty of an origami model.
 
 https://github.com/user-attachments/assets/b5ef8df7-d8f2-4d27-b1fa-51bead548d75 
-<img width="927" height="547" alt="Time vs difficulty" src="https://github.com/user-attachments/assets/bd2ea0cf-458b-478e-9a6b-f40e1083dcdb" />
 
 
 Origami Database 
