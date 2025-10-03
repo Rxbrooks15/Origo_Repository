@@ -1,6 +1,7 @@
 # Origo_Repository
+Ori(go) is a social media platform/ digital repository in the B2C market designed to gamify the origami/ paper folding experience. By integrating characters, challenges, rewards, and progress tracking, the app incentivizes users to fold and collect digital origami assets of varying **gami** (origami value). Competitors teach the art of paper folding but lack a sense of community and any fun incentives to fold origami. Ori(go) not only gamifies the origami experience through lore within the 'Creased Cosmos', but seeks to break into the cryptocurrency and NFT space while leveraging an AI fold algorithm (AIFA) that will allow users to learn the complexities of origami at an accelerated rate.
 **Current Website**: https://origo-frontend.onrender.com/index.html
-Ori(go)- Origami on the GO 
+**Ori(go)- Origami on the GO**
 (Art and Geometry Meets Technology)
 Current Streamlit page: https://origamiregression-fcz78atwckd2wtqhq7bk5d.streamlit.app/
 Ori(go) reseatch write-up
